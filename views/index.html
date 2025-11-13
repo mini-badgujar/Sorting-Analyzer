@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Sorting Visualizer</title>
+
+  <link href="..\css\sortingViz.css" rel="stylesheet" />
+
+</head>
+
+<body>
+ <header>
+    <h1>🎨 Sorting Algorithm Visualizer</h1>
+  </header>
+
+  <div class="controls">
+    <button id="bubbleBtn">Bubble Sort</button>
+    <button id="selectionBtn">Selection Sort</button>
+    <button id="insertionBtn">Insertion Sort</button>
+    <button id="playBtn" class="play-btn">▶ Play</button>
+    <button id="pauseBtn" class="pause-btn">⏸ Pause</button>
+    <button id="resetBtn" class="reset-btn">New Array</button>
+    
+    <div class="input-group">
+      <label>Custom Array:</label>
+      <input type="text" id="arrayInput" placeholder="e.g., 3,10,1,4,6,5,2,4,5,7">
+    </div>
+
+    <div class="slider-group">
+      <label>Speed:</label>
+      <input type="range" id="speedSlider" min="1" max="100" value="30">
+      <span id="speedValue">30</span>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-box" style="background-color: #ffeb3b;"></div>
+      <span>Unsorted</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background-color: #f44336;"></div>
+      <span>Comparing</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background-color: #2196f3;"></div>
+      <span>Pivot</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background-color: #4caf50;"></div>
+      <span>Sorted</span>
+    </div>
+  </div>
+
+  <div class="status" id="status">Ready to visualize!</div>
+
+  <div id="visualization"></div>
+  <!-- Scripts -->
+  <script src="..\js\sortingViz.js"></script>
+</body>
+
+</html>
