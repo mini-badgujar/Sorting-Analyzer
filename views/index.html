@@ -13,7 +13,7 @@
 
 <body>
  <header>
-    <h1>🎨 Sorting Algorithm Visualizer</h1>
+    <h1>Sorting Algorithm Visualizer</h1>
   </header>
 
   <div class="controls">
@@ -22,7 +22,7 @@
     <button id="insertionBtn">Insertion Sort</button>
     <button id="playBtn" class="play-btn">▶ Play</button>
     <button id="pauseBtn" class="pause-btn">⏸ Pause</button>
-    <button id="resetBtn" class="reset-btn">New Array</button>
+    <button id="resetBtn" class="reset-btn">Restart</button>
     
     <div class="input-group">
       <label>Custom Array:</label>
@@ -56,8 +56,84 @@
   </div>
 
   <div class="status" id="status">Ready to visualize!</div>
-
   <div id="visualization"></div>
+ <div class="explainer" id="bubble-sort-explainer">
+    <h2>🫧 Bubble Sort</h2>
+    <p>
+      Bubble Sort is a simple comparison-based algorithm that works by
+      repeatedly swapping adjacent elements if they are in the wrong order —
+      like bubbles rising to the top of a liquid!
+    </p>
+
+    <div class="steps">
+      <h3>How it Works:</h3>
+      <ol>
+        <li>Start at the beginning of the list.</li>
+        <li>Compare the current element with the next one.</li>
+        <li>If the current element is greater, swap them.</li>
+        <li>Repeat until no swaps are needed — the list is sorted.</li>
+      </ol>
+    </div>
+
+    <div class="complexity">
+      <p><strong>Time Complexity:</strong> O(n²)</p>
+      <p><strong>Space Complexity:</strong> O(1)</p>
+    </div>
+     <img src="..\images\bubble-sort.jpg" alt="selection_sort" height="500px" width="100%">
+  </div>
+
+  <div class="explainer" id="selection-sort-explainer">
+    <h2>🎯 Selection Sort</h2>
+    <p>
+      Selection Sort is a simple and intuitive sorting algorithm that works by
+      repeatedly selecting the smallest (or largest) element from the unsorted
+      portion of the list and placing it in its correct position — like selecting
+      the best player for your team one by one!
+    </p>
+
+    <div class="steps">
+      <h3>How it Works:</h3>
+      <ol>
+        <li>Start from the first element in the list.</li>
+        <li>Find the smallest element in the unsorted part of the list.</li>
+        <li>Swap it with the first unsorted element.</li>
+        <li>Move the boundary of the sorted part one step forward.</li>
+        <li>Repeat until the entire list is sorted.</li>
+      </ol>
+    </div>
+
+    <div class="complexity">
+      <p><strong>Time Complexity:</strong> O(n²)</p>
+      <p><strong>Space Complexity:</strong> O(1)</p>
+    </div>
+     <img src="..\images\selection-sort.jpg" alt="selection_sort"  height="500px" width="100%">
+  </div>
+
+  <div class="explainer" id="insertion-sort-explainer">
+    <h2>📌 Insertion Sort</h2>
+    <p>
+      Insertion Sort builds the final sorted array one item at a time by inserting
+      each element into its correct position — like sorting playing cards in your hand!
+    </p>
+
+    <div class="steps">
+      <h3>How it Works:</h3>
+      <ol>
+        <li>Start with the second element (assume first is sorted).</li>
+        <li>Compare it with elements in the sorted portion.</li>
+        <li>Shift larger elements to the right.</li>
+        <li>Insert the element in its correct position.</li>
+        <li>Repeat for all remaining elements.</li>
+      </ol>
+    </div>
+
+    <div class="complexity">
+      <p><strong>Time Complexity:</strong> O(n²)</p>
+      <p><strong>Space Complexity:</strong> O(1)</p>
+    </div>
+    <img src="..\images\insertion-sort.jpg" alt="selection_sort"  height="500px" width="100%">
+  </div>
+
   <!-- Scripts -->
   <script src="..\js\sortingViz.js"></script>
 </body>

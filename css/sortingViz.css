@@ -177,3 +177,106 @@ input[type="range"] {
   font-size: 16px;
   color: #4caf50;
 }
+
+.explainer {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 30px;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      border: 2px solid #0f3460;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      color: #e8e8e8;
+      line-height: 1.8;
+      display: none;
+      animation: slideIn 0.5s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .explainer.active {
+      display: block;
+    }
+
+    .explainer h2 {
+      text-align: center;
+      color: #4caf50;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+    }
+
+    .explainer p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      color: #b8b8b8;
+    }
+
+    .steps {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      border-left: 4px solid #4caf50;
+    }
+
+    .steps h3 {
+      color: #4caf50;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .steps ol {
+      margin-left: 20px;
+      color: #d0d0d0;
+    }
+
+    .steps li {
+      margin: 10px 0;
+      font-size: 1.05rem;
+    }
+
+    .complexity {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      margin: 25px 0;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      flex-wrap: wrap;
+    }
+
+    .complexity p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+
+    .complexity strong {
+      color: #4caf50;
+    }
+
+    .algorithm-visual {
+      text-align: center;
+      margin-top: 30px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.03);
+      border-radius: 10px;
+    }
+
+    .algorithm-visual img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }

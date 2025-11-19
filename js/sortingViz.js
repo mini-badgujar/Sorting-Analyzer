@@ -86,6 +86,10 @@
       [bubbleBtn, selectionBtn, insertionBtn].forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       updateStatus(`Selected: ${algo.charAt(0).toUpperCase() + algo.slice(1)} Sort`);
+
+      // Show/hide explainers
+      document.querySelectorAll('.explainer').forEach(e => e.classList.remove('active'));
+      document.getElementById(`${algo}-sort-explainer`).classList.add('active');
     }
 
     function renderBars() {
