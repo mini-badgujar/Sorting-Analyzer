@@ -58,6 +58,7 @@
       if (isSorting) {
         isPaused = true;
         playBtn.disabled = false;
+        resetBtn.disabled = false;
         updateStatus('⏸️ Paused');
       }
     });
